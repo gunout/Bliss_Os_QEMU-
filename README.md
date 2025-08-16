@@ -1,6 +1,23 @@
 # Bliss_Os_QEMU-
 Bliss Os on UBUNTU 
 
+# DEPENDENCES REQUIREMENTS
+
+    sudo apt update
+    sudo apt install -y qemu-system-x86 qemu-utils curl
+    sudo apt install -y virt-manager libvirt-daemon-system  # Pour KVM
+
+# ACTIVATE KVM
+
+    sudo kvm-ok
+
+# Si nécessaire, ajoutez votre utilisateur au groupe kvm :
+
+    sudo usermod -aG kvm $USER
+    
+
+
+
 # RUN
 
     chmod +x start_android_bin.sh
